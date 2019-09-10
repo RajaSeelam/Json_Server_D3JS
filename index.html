@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Rajya Sabha data </title>
+    <script src="index.js"></script>
+</head>
+
+
+<body>
+    <header>
+    	<script>
+        seturl("start");
+        </script>
+
+         <h1 style="text-align: center">Rajya Sabha Data</h1><hr>
+         <p style="float: right;margin-right: 10%">
+         	<a href="D3.html">D3JS-VISUALIZATION</a>
+         </p>
+         <p style="float: left; margin-left: 10%">Page Number 
+         <input onchange="seturl('pagechange')";
+         type="number" name="PageNumber" value="1" id='pagenumber' min=1 max=1010>
+         </p>
+         <p style="float: right;margin-right: 20%">
+         <input type="text" placeholder="Search Ministry" id="ministry"> 
+         <input onclick="seturl('MinistrySearch')"; type="button" value="Search"name="MinistryName" id="search">
+         </p>
+         <hr>
+    </header>
+
+    <div >
+    	<table>
+    		<thead>
+    			<tr><th>ID</th>
+    				<th onclick="Sortby('MINISTRY')";>MINISTRY</th>
+    				<th onclick="Sortby('QUESTION NUMBER')";>QUESTION NUMBER</th>
+    				<th>QUESTION BY</th></tr>
+    		</thead>
+    		<tbody id="table">
+    		</tbody>
+    	</table>
+    </div>
+
+
+</body>
+</html>

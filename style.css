@@ -1,0 +1,47 @@
+header
+    {
+        margin-bottom: 5%;
+     }
+h1
+{
+	text-shadow: palegreen 1px 1px;
+}
+p
+{
+    font-weight:bold;
+}
+table      
+ {
+  border-collapse: collapse;
+  margin-left: 10%;
+  width: 80%
+
+ }
+              
+ div,hr
+{
+	clear:both
+}
+tr:nth-child(even)
+{
+   background-color: LightGrey;
+}
+tr:hover
+{
+	background-color: black;
+	color: white;
+}
+th
+{
+	font-size: 1.5em;
+}
+        
+th,td 
+{
+ border: 1px solid black;
+ padding :20px;
+ text-align: center; 
+ font-family: "Comic Sans MS", cursive, sans-serif;        
+ }
+            
+    
